@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #8989ff;
+  --color-primary-light: #ccf;
+  --color-secondary: #003;
+  --color-accent: #f78a27;
+  --color-neutral: #eee;
+  --color-neutral2: #e2e2e2;
+  --font-primary: "Roboto", rial, sans-serif;
+  --font-secondary: "Source Code Pro", menlo, concolas, monospace;
+}
+
+html {
+  font-family: var(--font-primary);
+}
