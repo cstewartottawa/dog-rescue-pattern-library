@@ -25,7 +25,7 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
-                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#headers">Headers</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#header">Header</a></li>
           </ul>
         </nav>
       </div>
@@ -579,7 +579,7 @@
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
               <code><pre>&lt;a class="image-card"&gt;
-  &lt;img src="../../images/dog-baxter.jpg" alt="">
+  &lt;img class="img-flex" src="../../images/dog-baxter.jpg" alt="">
   &lt;div class="content gutter-1-2">
     &lt;h2 class="left inline-block push-1-8">Adopt Now&lt;/h2>
     &lt;i class="icon i-24 pad-t-1-4 push-1-8 inline-block pad-1-4 inline-block right">
@@ -601,10 +601,6 @@
       <h2 class="pattern-name peta push-1-8">Forms</h2>
     </div>
 
-      <div class="pattern-desc milli island">
-        <div class="max-length"><h1 id="this-is-a-basic-form-format">This is a basic form format</h1>
-</div>
-      </div>
   </div>
 
   
@@ -613,7 +609,7 @@
 
       <div class="pattern-examples">
         <div class="gutter">
-          <iframe class="push" src="patterns/Forms/index.html" onload="resizeIframe(this)"></iframe>
+          <iframe class="push" src="patterns/forms/index.html" onload="resizeIframe(this)"></iframe>
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
@@ -650,10 +646,10 @@
 
   &lt;div class="push-1-2 pad-t-1-2">
     &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
-    &lt;label for="agree">The above information is accurate&lt;/label>
+    &lt;label for="agree">I agree to the terms&lt;/label>
     &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
       &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-      &lt;span class="icon-label">Please agree that the above information is accurate&lt;/span>
+      &lt;span class="icon-label">Please agree with the terms&lt;/span>
     &lt;/p>
   &lt;/div>
 
@@ -669,21 +665,21 @@
 
 </section>
 
-        <section class="pattern" id="headers">
+        <section class="pattern" id="header">
   <div class="push">
     <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
-      <h2 class="pattern-name peta push-1-8">Headers</h2>
+      <h2 class="pattern-name peta push-1-8">Header</h2>
     </div>
 
   </div>
 
   
 
-    <div class="pattern-details push" id="headers-header">
+    <div class="pattern-details push" id="header-header">
 
       <div class="pattern-examples">
         <div class="gutter">
-          <iframe class="push" src="patterns/headers/header.html" onload="resizeIframe(this)"></iframe>
+          <iframe class="push" src="patterns/header/header.html" onload="resizeIframe(this)"></iframe>
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
@@ -693,26 +689,35 @@
   &lt;title>Header&lt;/title>
   &lt;meta name="viewport" content="width=device-width,initial-scale=1">
   &lt;link href="../../common/modules.css" rel="stylesheet">
-  &lt;link href="css/grid.css" rel="stylesheet">
+  &lt;link href="../../common/grid.css" rel="stylesheet">
   &lt;link href="../../common/type.css" rel="stylesheet">
   &lt;link href="../../common/theme.css" rel="stylesheet">
   &lt;link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  &lt;link href="css/header.css" rel="stylesheet">
+  &lt;link href="cards.css" rel="stylesheet">
 &lt;/head>
 
-&lt;header role="banner" class="masthead text-right island-1-2">
-  &lt;div class="push-1-2">
-    &lt;img class="img-flex" src="../../images/logo.svg" alt="">
-    &lt;h1 class="ib valign-left push-0 yotta">Loyal Rescue Inc.&lt;/h1>
+&lt;header role="banner" class="masthead grid grid-middle island-1-2">
+  &lt;div class="logo unit xs-1 s-1 m-1 l-1-4">
+    &lt;h1 class="push-0 gutter-1-4 pad-b-1-4">Loyal Rescue&lt;/h1>
   &lt;/div>
-  &lt;nav class="nav" role="navigation" id="nav">
-    &lt;ol class="nav list-group-inline push-0 giga">
-      &lt;li class="gutter-1-2">&lt;a class="block pad-t-1-8 pad-b-1-8" href="#all-types">Application&lt;/a>&lt;/li>
-      &lt;li class="gutter-1-2">&lt;a class="block pad-t-1-8 pad-b-1-8" href="#types">Happy Tails&lt;/a>&lt;/li>
-      &lt;li class="gutter-1-2">&lt;a class="block pad-t-1-8 pad-b-1-8" href="#vs-slugs">Contact Us&lt;/a>&lt;/li>
-      &lt;li class="gutter-1-2">&lt;a class="block pad-t-1-8 pad-b-1-8" href="#vs-slugs">FAQ&lt;/a>&lt;/li>
-      &lt;li class="gutter-1-2">&lt;a class="block pad-t-1-8 pad-b-1-8" href="#vs-slugs">Blog&lt;/a>&lt;/li>
-    &lt;/ol>
+  &lt;nav role="navigation" class="nav unit xs-1 s-1 m-1 l-3-4">
+    &lt;ul class="list-group-inline push-0">
+      &lt;li class="island-1-8">
+        &lt;a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#application">Application&lt;/a>
+      &lt;/li>
+      &lt;li class="island-1-8">
+        &lt;a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#happytails">Happy Tails&lt;/a>
+      &lt;/li>
+      &lt;li class="island-1-8">
+        &lt;a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#contactus">Contact Us&lt;/a>
+      &lt;/li>
+      &lt;li class="island-1-8">
+        &lt;a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#faq">FAQ&lt;/a>
+      &lt;/li>
+      &lt;li class="island-1-8">
+        &lt;a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#blog">Blog&lt;/a>
+      &lt;/li>
+    &lt;/ul>
   &lt;/nav>
 &lt;/header>
 &lt;/html>
