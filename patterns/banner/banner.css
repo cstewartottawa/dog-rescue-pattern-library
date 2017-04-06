@@ -35,7 +35,6 @@
     background-color: transparent;
     display: block;
     float: left;
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 51, .9));
   }
 
   .banner {
