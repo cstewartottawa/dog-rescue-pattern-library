@@ -1,0 +1,49 @@
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  background-color: #003;
+}
+
+.banner-content {
+  color: #fff;
+  display: block;
+  float: left;
+  background: #var(--color-secondary);
+}
+
+.btn {
+  background-color: transparent;
+  padding: .5em .75em;
+  color: #fff;
+  border-color: #fff;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner-content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: transparent;
+    display: block;
+    float: left;
+    background-image: linear-gradient(to bottom, transparent, rgba(73, 85, 98, .9));
+  }
+
+  .banner {
+    position: relative;
+    max-height: 500px;
+  }
+
+  .banner-button {
+    text-align: right;
+  }
+
+}
