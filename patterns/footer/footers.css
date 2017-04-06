@@ -1,0 +1,11 @@
+footer {
+  background-color: var(--color-neutral);
+}
+
+@media only screen and (min-width: 60em) {
+
+.contact {
+  text-align: left;
+}
+
+}
