@@ -42,7 +42,7 @@
   position: absolute;
   bottom: 5px;
   width: 100%;
-  background-color: rgba(0, 188, 212, .75);
+  background-color: rgba(0, 0, 51, .9);
   transition: all 500ms linear;
   overflow: hidden;
 }
@@ -59,7 +59,7 @@
 
 .dog-info-card h2 {
   color: #f1f1f1;
-  background-color: rgba(0, 151, 167, .7);
+  background-color: rgba(0, 0, 51, .9);
   transition: all 500ms linear;
 }
 
@@ -76,7 +76,7 @@
   position: absolute;
   bottom: 5px;
   width: 100%
-  background-color: rgba(0, 188, 212, .7);
+  background-color: rgba(0, 0, 51, .9);
   transition: all 500ms linear;
   overflow: hidden;
 }
