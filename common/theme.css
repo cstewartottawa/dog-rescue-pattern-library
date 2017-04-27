@@ -11,3 +11,38 @@
 html {
   font-family: var(--font-primary);
 }
+
+h1 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-secondary);
+}
+
+ul, dl, ol {
+  color: var(--color-primary);
+}
+
+dl, dt, dd {
+  color: var(--color-primary-light);
+}
+
+blockquote, cite {
+  font-family: var(--font-secondary);
+  color: var(--color-primary-light);
+}
+
+em, strong, del, ins, abbr, dfn, b, s, u {
+  color: var(--color-primary-light);
+}
+
+mark {
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
+}

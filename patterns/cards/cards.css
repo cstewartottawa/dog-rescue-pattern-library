@@ -19,11 +19,6 @@
   border-color: var(--color-primary-dark);
 }
 
-.card:hover h2, .card:hover p, .card:hover svg {
-  color: #f1f1f1;
-  fill: #f1f1f1;
-}
-
 .image-card h2 {
   color: #f1f1f1;
 }
@@ -32,6 +27,10 @@
   position: relative;
   transition: all 500ms linear;
   overflow: hidden;
+}
+
+.image-card .content {
+  width: 100%;
 }
 
 .image-card svg {
@@ -47,9 +46,6 @@
   overflow: hidden;
 }
 
-.image-card:hover .content {
-  background-color: var(--color-primary-dark);
-}
 
 .dog-info-card {
   position: relative;
@@ -79,12 +75,4 @@
   background-color: rgba(0, 0, 51, .9);
   transition: all 500ms linear;
   overflow: hidden;
-}
-
-.dog-info-card:hover .content {
-  background-color: var(--color-primary);
-}
-
-.dog-info-card:hover h2 {
-  background-color: var(--color-primary-dark);
 }
