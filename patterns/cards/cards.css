@@ -7,20 +7,17 @@
 }
 
 .card h2 {
-  color: #fff;
+  width: 100%
 }
 
 .card p {
   color: var(--color-neutral-text);
 }
 
-.card:hover {
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
-}
 
 .image-card h2 {
-  color: #f1f1f1;
+  color: var(--color-primary-dark);
+  width: 100%;
 }
 
 .image-card {
@@ -41,16 +38,13 @@
   position: absolute;
   bottom: 5px;
   width: 100%;
-  background-color: rgba(0, 0, 51, .9);
   transition: all 500ms linear;
-  overflow: hidden;
 }
 
 
 .dog-info-card {
   position: relative;
   transition: all 500ms linear;
-  overflow: hidden;
 }
 
 .dog-info-card h2 {
@@ -74,5 +68,4 @@
   width: 100%
   background-color: rgba(0, 0, 51, .9);
   transition: all 500ms linear;
-  overflow: hidden;
 }
